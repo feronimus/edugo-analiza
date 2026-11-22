@@ -1,0 +1,29 @@
+# Turns anonymous problem reports from the app (sent to a Google Form) into GitHub issues.
+# No keys are needed: the built-in GITHUB_TOKEN gets issue access from the permissions below.
+#
+# Setup: publish the form's response sheet as CSV (File > Share > Publish to web > CSV) and save that
+# link as the repository variable REPORTS_CSV_URL (Settings > Secrets and variables > Actions > Variables).
+name: Problem reports
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency: reports
+
+jobs:
+  reports:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create issues for new reports
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPORTS_CSV_URL: ${{ vars.REPORTS_CSV_URL }}
+          REPO: ${{ github.repository }}
+        run: python .github/scripts/reports_to_issues.py

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+# created by the installer / at runtime
+.venv/
+runtime/
+data/
+settings.json

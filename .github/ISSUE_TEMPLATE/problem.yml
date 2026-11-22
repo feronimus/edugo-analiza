@@ -1,0 +1,24 @@
+name: Problem z programem
+description: Coś nie działa albo wynik wygląda źle
+labels: ["zgłoszenie"]
+body:
+  - type: markdown
+    attributes:
+      value: "Zgłoszenie jest publiczne – nie wpisuj imion uczniów, nazwisk ani linków do nagrań."
+  - type: textarea
+    id: what
+    attributes:
+      label: Co się stało?
+      description: Na jakim etapie (instalacja, pobieranie, analiza, wyniki) i co widać na ekranie.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Wersja programu
+      description: Widać ją na dole ekranu wyników, np. „wersja 2.3.1”.
+  - type: dropdown
+    id: system
+    attributes:
+      label: Komputer
+      options: ["Windows", "Mac (Apple Silicon)", "Mac (Intel)", "Nie wiem"]

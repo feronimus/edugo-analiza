@@ -1,0 +1,38 @@
+eduGO Analiza – instalacja i uruchamianie
+=========================================
+
+Program działa w całości na Twoim komputerze. Nagrania lekcji nie są nigdzie wysyłane
+(pobierany jest tylko plik z Dropboxa, a po analizie zostaje usunięty).
+
+WYMAGANIA
+- Windows 10 lub 11
+  albo Mac: z procesorem Apple (M1–M4) – macOS 14 Sonoma lub nowszy; z procesorem Intel – macOS 13 Ventura lub nowszy
+- ok. 2 GB wolnego miejsca, internet podczas instalacji, najlepiej 8 GB pamięci RAM
+
+INSTALACJA (jednorazowo, 5–15 minut)
+1. Rozpakuj plik .zip w dowolnym miejscu (np. w folderze Dokumenty). Nie uruchamiaj instalacji z wnętrza pliku .zip.
+2. Windows: kliknij dwukrotnie „Zainstaluj_Windows.bat”.
+   Jeśli pojawi się niebieskie okno z ostrzeżeniem systemu Windows (SmartScreen):
+   kliknij „Więcej informacji”, a potem „Uruchom mimo to”.
+   Mac: kliknij PRAWYM przyciskiem myszy „Zainstaluj_Mac.command” → „Otwórz” → „Otwórz”.
+   Jeśli Mac nie pozwala otworzyć pliku: Ustawienia systemowe → Prywatność i ochrona →
+   na dole „Otwórz mimo to”. (Albo w programie Terminal wpisz „bash ”, przeciągnij plik do okna i naciśnij Enter.)
+3. Poczekaj na napis „GOTOWE”. Na pulpicie pojawi się ikona „eduGO Analiza”.
+   Jeśli instalacja się przerwie (np. z powodu problemów z internetem), uruchom ją jeszcze raz – zostanie wznowiona od miejsca przerwania.
+
+UŻYWANIE
+1. Kliknij ikonę „eduGO Analiza” na pulpicie – w przeglądarce otworzy się strona programu.
+2. Wklej link do nagrania z arkusza (Dropbox) i kliknij „Rozpocznij analizę”.
+3. Wynik pojawi się po ok. 2–4 minutach (zależnie od komputera) i zapisze się w zakładce „Historia”.
+Pełna instrukcja jest w programie – zakładka „Instrukcja”.
+
+AKTUALIZACJE
+Gdy pojawi się nowa wersja, program pokaże u góry żółtą ramkę. Wystarczy kliknąć „Zaktualizuj”.
+
+GDY COŚ NIE DZIAŁA
+- Strona się nie otwiera: kliknij ikonę jeszcze raz (zawsze działa tylko jedna kopia programu).
+- Komunikat o błędzie przy linku: sprawdź, czy plik jest udostępniony „każdemu, kto ma link”.
+- Program sam zwalnia pamięć po 15 minutach bezczynności. Żeby całkiem go zamknąć, uruchom
+  „Zatrzymaj_eduGO.bat” (Windows) albo „Zatrzymaj_eduGO.command” (Mac).
+- Problem? W programie kliknij „Zgłoś problem” na dole strony.
+- Odinstalowanie: usuń folder programu i ikonę z pulpitu (oraz folder eduGO_data, jeśli instalator go utworzył).

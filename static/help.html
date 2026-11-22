@@ -1,0 +1,111 @@
+<nav class="card toc" data-l="pl">
+  <a href="#" data-goto="h-start">Jak zacząć</a><a href="#" data-goto="h-result">Ekran wyniku</a><a href="#" data-goto="h-number">Skąd ta liczba?</a>
+  <a href="#" data-goto="h-extra">Wskaźniki dodatkowe</a><a href="#" data-goto="h-history">Historia</a><a href="#" data-goto="h-settings">Ustawienia</a>
+  <a href="#" data-goto="h-update">Aktualizacje</a><a href="#" data-goto="h-data">Gdzie są dane</a><a href="#" data-goto="h-trouble">Gdy coś nie działa</a>
+</nav>
+<nav class="card toc" data-l="en">
+  <a href="#" data-goto="h-start">Getting started</a><a href="#" data-goto="h-result">The result screen</a><a href="#" data-goto="h-number">Where the number comes from</a>
+  <a href="#" data-goto="h-extra">Extra metrics</a><a href="#" data-goto="h-history">History</a><a href="#" data-goto="h-settings">Settings</a>
+  <a href="#" data-goto="h-update">Updates</a><a href="#" data-goto="h-data">Data</a><a href="#" data-goto="h-trouble">If something doesn't work</a>
+</nav>
+
+<section class="card" id="h-start">
+  <div data-l="pl"><h2>Jak zacząć</h2>
+    <ol><li>W zakładce <b>Analiza</b> wklej link do nagrania z Dropboxa (z arkusza) i kliknij <b>Rozpocznij analizę</b>. Możesz też wybrać plik z komputera.</li>
+      <li>Analiza godzinnej lekcji trwa zwykle 2–4 minuty. W tym czasie możesz przejść do Historii albo Instrukcji – analiza się nie przerwie, a jej postęp widać w menu.</li>
+      <li>Wynik otworzy się sam (można to wyłączyć w Ustawieniach) i zapisze się w Historii.</li>
+      <li><b>Kilka nagrań naraz</b>: rozwiń tę opcję pod polem na link, wklej linki – po jednym w wierszu – i dodaj je do kolejki.</li></ol>
+    <p class="muted">Nagranie nie jest nigdzie zapisywane: po analizie program je usuwa i zostają tylko liczby.</p></div>
+  <div data-l="en"><h2>Getting started</h2>
+    <ol><li>On the <b>Analysis</b> tab, paste the Dropbox link to the recording (from the spreadsheet) and click <b>Start analysis</b>. You can also choose a file from your computer.</li>
+      <li>A one-hour lesson usually takes 2–4 minutes. Meanwhile you can open History or Instructions – the analysis keeps running and its progress shows in the menu.</li>
+      <li>The result opens by itself (this can be turned off in Settings) and is saved in History.</li>
+      <li><b>Several recordings at once</b>: open this option under the link field, paste the links – one per line – and add them to the queue.</li></ol>
+    <p class="muted">The recording is not stored anywhere: the program deletes it after the analysis and keeps only the numbers.</p></div>
+</section>
+
+<section class="card" id="h-result">
+  <div data-l="pl"><h2>Ekran wyniku</h2><ul>
+    <li><b>Angielski nauczyciela (w skali metodyka)</b> – duża liczba i skala podzielona na sześć przedziałów z arkusza ocen metodyków. Znacznik pokazuje, gdzie na tej skali wypada lekcja.</li>
+    <li><b>Kto mówi</b> – podział całego czasu mówienia między nauczyciela a uczniów.</li>
+    <li><b>Kto mówi po angielsku</b> – jaka część angielskiego na lekcji przypada na nauczyciela, a jaka na uczniów.</li>
+    <li><b>Przebieg lekcji</b> – minuta po minucie: angielski nad linią, polski pod linią; ciemniejszy kolor to nauczyciel, jaśniejszy – uczniowie. Zacieniony początek to polskie powitanie i small talk. Po najechaniu kursorem na słupek widać liczbę sekund.</li>
+    <li><b>Dokładny pomiar</b> – udział angielskiego i polskiego (czas mówienia) dla całej lekcji, nauczyciela i uczniów, bez przeliczania na skalę metodyka.</li>
+    <li>Na górze: <b>Wróć</b> i <b>Pobierz CSV</b> (plik do Excela). Ostrzeżenie pojawia się, gdy uczniowie mówią więcej niż nauczyciel albo program nie jest pewien, kto jest nauczycielem.</li></ul></div>
+  <div data-l="en"><h2>The result screen</h2><ul>
+    <li><b>Teacher's English (methodologist scale)</b> – the big number and a scale with the six bands of the methodologists' rating sheet. The marker shows where the lesson falls on that scale.</li>
+    <li><b>Who speaks</b> – how all the speaking time is split between the teacher and the students.</li>
+    <li><b>Who speaks the English</b> – of all the English in the lesson, the share said by the teacher and by the students.</li>
+    <li><b>The lesson minute by minute</b> – English above the line, Polish below; the darker colour is the teacher, the lighter one the students. The shaded start is the Polish greeting and small talk. Hover a bar to see the seconds.</li>
+    <li><b>Exact measurement</b> – English and Polish shares (speaking time) for the whole lesson, the teacher and the students, without conversion.</li>
+    <li>At the top: <b>Back</b> and <b>Download CSV</b> (a file for Excel). A warning appears when the students speak more than the teacher or the program is not sure who the teacher is.</li></ul></div>
+</section>
+
+<section class="card" id="h-number">
+  <div data-l="pl"><h2>Skąd liczba w skali metodyka</h2>
+    <p>W części „Skąd ta liczba?” na ekranie wyniku są trzy kroki:</p>
+    <ol><li><b>Stoper</b>: jaka część czasu, w którym mówił nauczyciel, przypadła na angielski – w całej lekcji.</li>
+      <li><b>Od przejścia na angielski</b>: każda lekcja zaczyna się po polsku (powitanie, small talk, sprawy organizacyjne), a w każdej trwa to inaczej. Program znajduje moment, w którym lekcja przechodzi głównie na angielski, i od tej chwili liczy angielski nauczyciela.</li>
+      <li><b>Skala metodyka</b>: metodycy oceniają lekcję ze słuchu, a ich oceny są wyższe niż wskazania stopera – lekcję, w której nauczyciel mówi po angielsku mniej więcej połowę czasu, zwykle oceniają jako „Niezła” (60–79%). Liczba jest przeliczona na skalę z arkusza ocen.</li></ol></div>
+  <div data-l="en"><h2>Where the methodologist-scale number comes from</h2>
+    <p>The result screen shows three steps (“Where does this number come from?”):</p>
+    <ol><li><b>Stopwatch</b>: the share of the teacher's speaking time in English – over the whole lesson.</li>
+      <li><b>From the switch to English</b>: every lesson starts in Polish (greeting, small talk, organisation), for a different length of time. The program finds the moment the lesson switches mainly to English and counts the teacher's English from there.</li>
+      <li><b>Methodologist scale</b>: methodologists rate a lesson by ear, and their ratings sit higher than a stopwatch – a lesson where the teacher speaks English about half of the time is usually rated “Niezła” (60–79%). The number is converted to the scale of the rating sheet.</li></ol></div>
+</section>
+
+<section class="card" id="h-extra">
+  <div data-l="pl"><h2>Wskaźniki dodatkowe (eksperymentalne)</h2>
+    <p>Długość lekcji, polski początek (do przejścia na angielski), liczba pochwał nauczyciela na 10 minut i problemy techniczne (dźwięk, kamera, połączenie). Każdy wskaźnik ma pasek:</p>
+    <ul><li><b>zielony fragment</b> – typowy zakres w lekcjach eduGO, czyli środkowe 50% wyników z lekcji wielu nauczycieli;</li>
+      <li><b>pomarańczowa kropka</b> – ta lekcja;</li>
+      <li><b>▼</b> – średnia tego nauczyciela z jego innych lekcji w Historii (gdy takie są).</li></ul>
+    <p class="muted">To wskazówki, nie ocena.</p></div>
+  <div data-l="en"><h2>Extra metrics (experimental)</h2>
+    <p>Lesson length, Polish opening (until the switch to English), the teacher's praise per 10 minutes and mentions of technical issues (sound, camera, connection). Each metric has a bar:</p>
+    <ul><li><b>green part</b> – the typical range for eduGO lessons, the middle half of lessons by many teachers;</li>
+      <li><b>orange dot</b> – this lesson;</li>
+      <li><b>▼</b> – this teacher's average over their other lessons in History (when there are any).</li></ul>
+    <p class="muted">These are hints, not a rating.</p></div>
+</section>
+
+<section class="card" id="h-history">
+  <div data-l="pl"><h2>Historia</h2><ul>
+    <li>Każda analiza zapisuje się w zakładce <b>Historia</b>. Kliknij wpis, żeby zobaczyć wynik.</li>
+    <li><b>Filtry</b>: szukaj po nazwisku albo grupie, wybierz nauczyciela, rodzaj zajęć (STAŁE/DEMO) i zakres dat.</li>
+    <li><b>Trend nauczyciela</b>: wybierz nauczyciela (albo kliknij jego kafelek) – wykres pokaże jego angielski lekcja po lekcji na tle przedziałów z arkusza ocen.</li>
+    <li>Nauczyciela, grupę i datę program odczytuje z nazwy nagrania w Teams. Przy zastępstwie zmień nauczyciela ikoną ołówka; ikona kosza usuwa wpis (program najpierw pyta o potwierdzenie).</li></ul></div>
+  <div data-l="en"><h2>History</h2><ul>
+    <li>Every analysis is saved on the <b>History</b> tab. Click an entry to see its result.</li>
+    <li><b>Filters</b>: search by name or group, pick a teacher, the lesson type (STAŁE/DEMO) and a date range.</li>
+    <li><b>Teacher trend</b>: pick a teacher (or click their tile) – the chart shows their English lesson by lesson over the bands of the rating sheet.</li>
+    <li>Teacher, group and date are read from the Teams recording name. For a substitute, change the teacher with the pencil icon; the bin icon deletes an entry (after a confirmation).</li></ul></div>
+</section>
+
+<section class="card" id="h-settings">
+  <div data-l="pl"><h2>Ustawienia</h2><p>Język (polski albo angielski), moc komputera podczas analizy (wynik jest zawsze taki sam, zmienia się tylko czas), automatyczne otwieranie wyniku, sprawdzanie aktualizacji i folder z danymi. Ustawienia są zapamiętywane na tym komputerze.</p></div>
+  <div data-l="en"><h2>Settings</h2><p>Language (Polish or English), computer power during an analysis (the result is always the same – only the time changes), opening the result automatically, checking for updates and the data folder. Settings are remembered on this computer.</p></div>
+</section>
+
+<section class="card" id="h-update">
+  <div data-l="pl"><h2>Aktualizacje</h2><p>Gdy dostępna jest nowa wersja, u góry pojawia się żółta ramka z opisem zmian („Co nowego”). Kliknij <b>Zaktualizuj</b> – program pobierze nową wersję i uruchomi się ponownie, zwykle w ciągu minuty. Modele i historia zostaną zachowane, a jeśli coś pójdzie nie tak, program wróci do poprzedniej wersji.</p></div>
+  <div data-l="en"><h2>Updates</h2><p>When there is a new version, a yellow banner with the changes (“What's new”) appears at the top. Click <b>Update</b> – the program downloads the new version and restarts, usually within a minute. Models and history stay, and if something goes wrong, the program goes back to the previous version.</p></div>
+</section>
+
+<section class="card" id="h-data">
+  <div data-l="pl"><h2>Gdzie są dane</h2><p>Na tym komputerze, w folderze programu, w podfolderze <code>data</code>: <code>history.json</code> (historia – tylko liczby i nazwy lekcji), <code>models</code> (modele mowy, ok. 700 MB), <code>server.log</code> (dziennik programu), <code>backup</code> (poprzednia wersja po aktualizacji). Folder otworzysz w Ustawieniach.</p></div>
+  <div data-l="en"><h2>Where the data is</h2><p>On this computer, in the program folder, in the <code>data</code> subfolder: <code>history.json</code> (history – numbers and lesson names only), <code>models</code> (speech models, about 700 MB), <code>server.log</code> (the program's log), <code>backup</code> (the previous version after an update). Open the folder from Settings.</p></div>
+</section>
+
+<section class="card" id="h-trouble">
+  <div data-l="pl"><h2>Gdy coś nie działa</h2><ul>
+    <li><b>„Program nie odpowiada”</b> – uruchom „eduGO Analiza” ponownie z pulpitu.</li>
+    <li><b>Link nie działa</b> – sprawdź, czy plik w Dropboxie jest udostępniony „każdemu, kto ma link”.</li>
+    <li><b>Zatrzymanie programu</b> – program sam zwalnia pamięć po 15 minutach bezczynności. Żeby całkowicie go zatrzymać, uruchom z folderu programu plik <code>Zatrzymaj_eduGO.bat</code> (Windows) albo <code>Zatrzymaj_eduGO.command</code> (Mac).</li>
+    <li>Nadal coś nie działa? Kliknij <b>Zgłoś problem</b> na dole strony.</li></ul></div>
+  <div data-l="en"><h2>If something doesn't work</h2><ul>
+    <li><b>“The program is not responding”</b> – start “eduGO Analiza” again from the desktop.</li>
+    <li><b>The link doesn't work</b> – check that the Dropbox file is shared with “anyone with the link”.</li>
+    <li><b>Stopping the program</b> – it frees memory by itself after 15 idle minutes. To stop it completely, run <code>Zatrzymaj_eduGO.bat</code> (Windows) or <code>Zatrzymaj_eduGO.command</code> (Mac) from the program folder.</li>
+    <li>Still not working? Click <b>Report a problem</b> at the bottom of the page.</li></ul></div>
+</section>
